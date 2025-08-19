@@ -1,0 +1,232 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    color: #bb86fc;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    border-bottom: 2px solid #333333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Input Section */
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#skillSearch {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding in width */
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+.search-results {
+    position: absolute;
+    width: 100%;
+    background-color: #2d2d2d;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.search-result-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #444444;
+    color: #e0e0e0;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background-color: #3d3d3d;
+}
+
+.selected-skills-container {
+    border: 1px dashed #444444;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 80px;
+    background-color: #252525;
+}
+
+.placeholder-text {
+    color: #888888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.selected-skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #444444;
+}
+
+.selected-skill-item:last-child {
+    border-bottom: none;
+}
+
+.skill-info {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.skill-score {
+    font-style: italic;
+    color: #aaaaaa;
+    margin-left: 10px;
+}
+
+.skill-cost-input {
+    width: 80px;
+    padding: 5px 8px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-align: right;
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+.remove-skill-btn {
+    background-color: #cf6679;
+    color: #121212;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.2s ease;
+}
+
+.remove-skill-btn:hover {
+    background-color: #d97a8c;
+}
+
+/* Budget Section */
+#budgetInput {
+    width: calc(100% - 30px); /* Adjust for padding */
+    padding: 12px 15px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+/* Action Section */
+#calculateButton {
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #03dac6;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#calculateButton:hover {
+    background-color: #00e6d3;
+}
+
+#calculateButton:disabled {
+    background-color: #333333;
+    cursor: not-allowed;
+    color: #888888;
+}
+
+#calculationStatus {
+    text-align: center;
+    margin-top: 15px;
+    font-style: italic;
+    color: #aaaaaa;
+}
+
+/* Results Section */
+.results-section div {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    font-size: 1.1rem;
+}
+
+#bestScoreOutput {
+    font-weight: bold;
+    color: #bb86fc;
+    font-size: 1.2rem;
+}
+
+#bestCostOutput {
+    color: #aaaaaa;
+}
+
+.best-skills-output {
+    background-color: #2d2d2d;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 50px;
+}
+
+.best-skills-output ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.best-skills-output li {
+    padding: 3px 0;
+    color: #e0e0e0;
+}

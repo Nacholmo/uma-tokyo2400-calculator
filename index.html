@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo 2400m Champions Meeting - Taurus Cup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tokyo 2400m Champions Meeting - Taurus Cup</h1>
+
+        <section class="input-section">
+            <h2>1. Input Your Available Skills</h2>
+            <div class="search-container">
+                <input type="text" id="skillSearch" placeholder="Search and add skills...">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+            <div id="selectedSkillsContainer" class="selected-skills-container">
+                <!-- Selected skills will be added here -->
+                <p class="placeholder-text">Add skills using the search bar above.</p>
+            </div>
+        </section>
+
+        <section class="budget-section">
+            <h2>2. Set Your Skill Point Budget</h2>
+            <input type="number" id="budgetInput" value="500" min="0" step="1" placeholder="Enter budget...">
+        </section>
+
+        <section class="action-section">
+            <button id="calculateButton">Calculate Best Score</button>
+            <p id="calculationStatus"></p>
+        </section>
+
+        <section class="results-section">
+            <h2>3. Best Combination Found</h2>
+            <div id="bestScoreOutput">Best Score: 0</div>
+            <div id="bestCostOutput">Total Cost: 0</div>
+            <div id="bestSkillsOutput" class="best-skills-output">
+                <!-- Best skills combination will be displayed here -->
+                <p>Click 'Calculate Best Score' to see results.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
