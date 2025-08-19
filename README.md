@@ -28,7 +28,7 @@ Monte Carlo simulation provides a practical and efficient heuristic approach. By
 
 ## 📊 Skill Data Used
 
-The base scores for the skills are transcribed from the following in-game data:
+The base scores for the skills are from a random image that some guy sended on discord at 4AM:
 
 ```
 Gold Skills
